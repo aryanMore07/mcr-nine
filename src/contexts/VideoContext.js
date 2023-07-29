@@ -5,7 +5,7 @@ import { videos } from "../data/allVideosData/allVideosData";
 export const VideoContext = createContext();
 
 export const VideoProvider = ({ children }) => {
-    
+
     const [categoriesData, setCategoriesData] = useState(categories);
     const [videosData, setVideosData] = useState(videos)
 
