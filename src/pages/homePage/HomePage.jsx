@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './homePage.css';
 import { useNavigate } from 'react-router';
+import { VideoContext } from '../../contexts/VideoContext';
 
 const HomePage = () => {
 
   const navigate = useNavigate();
-  const categoriesData = JSON.parse(localStorage.getItem('categoriesData'))
+  const { categoriesData } = useContext(VideoContext);
 
   return (
     <div className='home-div'>

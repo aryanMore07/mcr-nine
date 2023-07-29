@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import './explorePage.css';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import VideoCard from '../../components/videoCard/VideoCard';
+import { VideoContext } from '../../contexts/VideoContext';
 
 const ExplorePage = () => {
 
   const [input, setInput] = useState('');
-  const videosData = JSON.parse(localStorage.getItem('videosData'));
+  const { videosData } = useContext(VideoContext);
 
   const inputHandler = (event) => {
     setInput(event.target.value);
@@ -28,11 +29,11 @@ const ExplorePage = () => {
         </Box>
       </div>
       <div className='videos-div'>
-          { 
-            filteredVideosData.length === 0 ?
+        {
+          filteredVideosData.length === 0 ?
             (<h1 className='page-heading'>No videos found ;)</h1>) :
-            filteredVideosData.map((video) => <VideoCard key={video._id} videoData={video} /> )
-          }
+            filteredVideosData.map((video) => <VideoCard key={video._id} videoData={video} />)
+        }
       </div>
     </div>
   )
