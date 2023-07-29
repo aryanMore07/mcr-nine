@@ -20,8 +20,8 @@ export const VideoProvider = ({children}) => {
     const [videosData, setVideosData] = useState(initialVideoState)
 
     useEffect(() => {
-        localStorage.setItem('categoriesData', JSON.stringify(categoriesData))
-        localStorage.setItem('videosData', JSON.stringify(videosData))
+        localStorage.setItem('categoriesData', JSON.stringify(categories))
+        localStorage.setItem('videosData', JSON.stringify(videos))
     }, [categoriesData, videosData])
 
     return <VideoContext.Provider value={{ setCategoriesData, setVideosData }}>{children}</VideoContext.Provider>
