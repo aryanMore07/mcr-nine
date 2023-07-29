@@ -1,0 +1,136 @@
+/* Default styles for mobile devices */
+.selected-video-heading {
+  grid-area: video-div;
+}
+
+.recommend-videos {
+  border-left: 5px solid #dfdfdf;
+  overflow: scroll;
+  height: 100vh;
+  border-left: 5px solid #dfdfdf;
+  grid-area: recommend-div;
+}
+
+.selected-video-layout {
+  display: grid;
+  grid-template-areas:
+    "video-div video-div"
+    "video-div video-div"
+    "recommend-div recommend-div";
+}
+
+.selected-video-heading {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 6rem 20px 6rem;
+}
+
+.icons-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: calc(15% + 15px);
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.selected-video-layout {
+  display: grid;
+}
+
+/* right side div  */
+
+.recommend-videos {
+  border-left: 5px solid #dfdfdf;
+  overflow: scroll;
+  height: 100vh;
+  border-left: 5px solid #dfdfdf;
+  width: min-content;
+}
+
+/* Styles for tablets (portrait) and up */
+@media (min-width: 768px) {
+  .selected-video-layout {
+    display: grid;
+    grid-template-areas:
+      "video-div video-div"
+      "video-div video-div"
+      "recommend-div recommend-div";
+  }
+
+  .selected-video-heading {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 6rem 20px 6rem;
+  }
+
+  .icons-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: calc(15% + 15px);
+  }
+
+  .icons {
+    cursor: pointer;
+  }
+
+  .selected-video-layout {
+    display: grid;
+  }
+
+  /* right side div  */
+
+  .recommend-videos {
+    border-left: 5px solid #dfdfdf;
+    overflow: scroll;
+    height: 100vh;
+    border-left: 5px solid #dfdfdf;
+    width: min-content;
+  }
+}
+
+/* Styles for laptops and up */
+@media screen and (min-width: 1024px) {
+  .selected-video-layout {
+    display: grid;
+    grid-template-areas:
+      "video-div video-div  recommend-div"
+      "video-div video-div  recommend-div"
+      "video-div video-div  recommend-div";
+  }
+
+  .selected-video-heading {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 6rem 20px 6rem;
+  }
+
+  .selected-secondary-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: calc(15% + 15px);
+  }
+
+  .icons {
+    cursor: pointer;
+  }
+
+  /* right side div  */
+
+  .recommend-videos {
+    border-left: 5px solid #dfdfdf;
+    overflow: scroll;
+    height: 100vh;
+    border-left: 5px solid #dfdfdf;
+    width: min-content;
+  }
+}

@@ -37,7 +37,7 @@
   .leftside-bar {
     height: 100vh;
     /* border-right: 5px solid #dfdfdf; */
-    padding: 3rem;
+    padding: 0px 3rem 0px 3rem;
     width: max-content;
   }
 
@@ -75,7 +75,7 @@
   .leftside-bar {
     height: 100vh;
     /* border-right: 5px solid #dfdfdf; */
-    padding: 3rem;
+    padding: 0px 3rem 0px 3rem;
     width: max-content;
   }
 

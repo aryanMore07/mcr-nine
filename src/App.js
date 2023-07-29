@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router';
 import PlaylistPage from './pages/playlistPage/PlaylistPage';
 import LeftsideBar from './components/leftSideBar/LeftsideBar';
 import SingleCategoryPage from './pages/singleCategoryPage/SingleCategoryPage';
+import SelectedVideoPage from './pages/selectedVideoPage/SelectedVideoPage';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/playlist' element={<PlaylistPage />} />
           <Route path='/watchlater' element={<WatchlistPage />} />
           <Route path='/category/:categoryName' element={<SingleCategoryPage />} />
+          <Route path='/video/:videoId' element={<SelectedVideoPage />} />
         </Routes>
       </div>
     </div>
