@@ -1,0 +1,85 @@
+/* Default styles for mobile devices */
+
+.video-div {
+  position: relative;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-div:hover {
+  cursor: pointer;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+.watchlaterBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4.5px;
+  background-color: #ded9d9;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+}
+
+/* Styles for tablets (portrait) and up */
+@media (min-width: 768px) {
+  .video-div {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-div:hover {
+    cursor: pointer;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+
+  .watchlaterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px;
+    background-color: #ded9d9;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+  }
+}
+
+/* Styles for laptops and up */
+@media screen and (min-width: 1024px) {
+  .video-div {
+    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-div:hover {
+    cursor: pointer;
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  }
+
+  .watchlaterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4.5px;
+    background-color: #ded9d9;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+  }
+}

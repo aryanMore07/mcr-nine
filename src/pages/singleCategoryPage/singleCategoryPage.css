@@ -1,0 +1,18 @@
+/* Default styles for mobile devices */
+.singe-category-div {
+    
+}
+  
+  /* Styles for tablets (portrait) and up */
+  @media (min-width: 768px) {
+    .singe-category-div {
+        
+    }
+  }
+  
+  /* Styles for laptops and up */
+  @media screen and (min-width: 1024px) {
+    .singe-category-div {
+        
+    }
+  }
